@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CodeBroadcast:jar">
+    <output-path>$PROJECT_DIR$/build/confirm</output-path>
+    <root id="archive" name="CodeBroadcast.jar">
+      <element id="module-output" name="CodeBroadcast" />
+    </root>
+  </artifact>
+</component>
