@@ -2,6 +2,7 @@ name: CodeBroadcast
 version: '1.0'
 main: com.playivanikyt.codebroadcast.CodeBroadcast
 api-version: '1.16'
+depend: [PlaceholderAPI]
 commands:
   broadcast:
     aliases:
@@ -9,3 +10,13 @@ commands:
   codebroadcast:
     aliases:
       - cbc
+permissions:
+  codebroadcast.use:
+    description: Позволяет использовать /broadcast
+    default: false
+  codebroadcast.color:
+    description: Позволяет использовать цвета в сообщении
+    default: false
+  codebroadcast.reload:
+    description: Позволяет перезагружать плагин
+    default: op

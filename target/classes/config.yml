@@ -5,10 +5,10 @@
 # ##       ##       ##  ##     ##       ##     ##  ##   ##  ##   ## ###     ##     ####       ##       ##
 # ##       ##       ##  ##     ##       ##      ####    ##  ##   ##  ##     ##     ## ##      ##       ##
 # ##       ######   ##  ##     ##      ####      ##     ##  ##   ##  ##    ####    ##  ##     ##       ##
+broadcast-cooldown: 60 #обычно указывать в секундах
+
 messages:
-  broadcast: "&f[&6Обьявление&f] &f%message% &7(Автор: &e%player%&7)"
-  broadcast-cooldown: 60
-  cooldown-message: "&6&l▶ &fПодождите, вам осталось ещё %time% секунд!"
+  broadcast: "&f[&6Обьявление&f] &f%message% &7(Автор: &e%player_name%&7)"
   no-permission: "&6&l▶ &fУ вас нету данной возможности, приобретите донат выше для данной возможности!"
   reload: "&6&l▶ &fВы &aуспешно &fперезагрузили плагин!"
   no-args:
@@ -16,3 +16,7 @@ messages:
     - ""
     - "&f/broadcast &7- &fсделать объявление"
     - "&f/codebroadcast reload &7- &fперезагрузить плагин"
+cooldown:
+  message: "&6&l▶ &fПодождите, вам осталось ещё %minutes%м. %seconds% сек!"
+#  Правильные Placeholders для указа времени
+#  %hours% - часы, %minutes% - минуты, %seconds% - секунды.
